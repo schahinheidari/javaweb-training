@@ -18,7 +18,7 @@ public class InsertProductServlet extends HttpServlet {
     public void init(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaweb", "root", "Bikar0001@");
+            cn = DriverManager.getConnection("jdbc:mysql://localhost:3306/javaweb", "", "");
         } catch (Exception e) {
             e.printStackTrace();
         }
